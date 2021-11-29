@@ -91,11 +91,11 @@ post_limit: 3
             <div class="relative w-full">
               <a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ post.url }}">
                 <div class="aspect-h-4 aspect-w-3 rounded-lg">
-                  <img src="{{ site.url }}{{ post.cover }}" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="">
+                  <img src="{{ site.url }}{{ post.cover }}" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="{{ post.title }}">
                   <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
-                  <img title="" alt="" src="{{ site.url }}{{ post.cover }}" srcset="" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
+                  <img title="{{ post.title }}" alt="{{ post.title }}" src="{{ site.url }}{{ post.cover }}" srcset="" sizes="(max-width:639px) 100%, (min-width:640px) and (max-width:1023px) 100%, (min-width:1024px) and (max-width:1620px) 100%, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
                   <noscript>
-                    <img title="" alt="" src="{{ site.url }}{{ post.cover }}" srcSet="" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
+                    <img title="{{ post.title }}" alt="{{ post.title }}" src="{{ site.url }}{{ post.cover }}" srcSet="" sizes="(max-width:639px) 100%, (min-width:640px) and (max-width:1023px) 100%, (min-width:1024px) and (max-width:1620px) 100%, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
                   </noscript>
                 </div>
                 <div class="mt-8 text-blueGray-500 text-xl font-medium">{% include post_date.html date=post.date %}</div>
