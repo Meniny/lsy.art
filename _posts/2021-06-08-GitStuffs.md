@@ -3,6 +3,7 @@ title: "Git Stuffs"
 category: "Technology"
 tags: ["Git"]
 date: 20210608T170000+08:00
+cover: '/assets/images/posts/git-workflow.png'
 ---
 ## Branches - 分支
 
