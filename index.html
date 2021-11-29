@@ -79,27 +79,28 @@ has_header: true
 
       <!-- space -->
       <div class=" h-10 lg:h-12"></div>
-
+      
       <!-- blogs -->
       <div class="relative mx-10vw">
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
+          {% for post in site.posts limit: 3 %}
           <!-- post -->
           <div class="col-span-4">
             <div class="relative w-full">
               <a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ post.url }}">
                 <div class="aspect-h-4 aspect-w-3 rounded-lg">
-                  <img src="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAQDQCdASpkAEMAPrFGmko7qyWhsls9U3AWCWkGcA01nlwbK5buwWRoA3koD7+5vLBXAtOMrneG2GT90JyrLz+2XeotIAEq5PL4F0N1qTRIJ7LnMa5Zcre8UaDTMRtFt14eXNoGYkhNSt0REMN2PN4FwAD+7s4jHeyE9BXykzZMxIuwC4FSp408GYxRjoczsMvwZlqrnzr4cuA6X6MspvaoVHUro1XNU1SNxrLKLjhZrJ3GmlyoorlW1L532OP9tbhOeQgFiDwE81g+CH4d16xfOjEGrpus0wYxdunoI7Nokc5fnyoAw8pKJEq6cW3Yp4rqZw9fosV61qnAN+ViAH+WOzoqC6R90AA=" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="">
-                  <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
-                  <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
+                  <!-- <img src="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAQDQCdASpkAEMAPrFGmko7qyWhsls9U3AWCWkGcA01nlwbK5buwWRoA3koD7+5vLBXAtOMrneG2GT90JyrLz+2XeotIAEq5PL4F0N1qTRIJ7LnMa5Zcre8UaDTMRtFt14eXNoGYkhNSt0REMN2PN4FwAD+7s4jHeyE9BXykzZMxIuwC4FSp408GYxRjoczsMvwZlqrnzr4cuA6X6MspvaoVHUro1XNU1SNxrLKLjhZrJ3GmlyoorlW1L532OP9tbhOeQgFiDwE81g+CH4d16xfOjEGrpus0wYxdunoI7Nokc5fnyoAw8pKJEq6cW3Yp4rqZw9fosV61qnAN+ViAH+WOzoqC6R90AA=" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="">-->
+                  <!-- <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>-->
+                  <img title="" alt="" src="{{ post.cover }}" srcset="" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
                   <noscript>
-                    <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
+                    <img title="" alt="" src="{{ post.cover }}" srcSet="" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
                   </noscript>
                 </div>
-                <div class="mt-8 text-blueGray-500 text-xl font-medium">{{ post.date }}<br/>34 min read</div>
+                <div class="mt-8 text-blueGray-500 text-xl font-medium">{% include post_date.html date=post.date %}</div>
                 <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ post.title }}</div>
               </a>
               <button class="p-3 text-black whitespace-nowrap text-lg font-medium bg-white rounded-lg focus:outline-none shadow hover:shadow-md group-hover:opacity-100 peer-hover:opacity-100 hover:opacity-100 peer-focus:opacity-100 focus:opacity-100 transition focus:ring-4 hover:ring-4 ring-team-current lg:opacity-0 lg:px-8 lg:py-4 absolute z-10 left-6 top-6">
-                <spanclass="hidden lg:inline">Click to copy url</span>
+                <spanclass="hidden lg:inline">Read more</span>
                   <span class="inline lg:hidden">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path>
@@ -109,60 +110,6 @@ has_header: true
               </button>
             </div>
           </div>
-
-          <!-- post -->
-          <div class="col-span-4">
-            <div class="relative w-full">
-              <a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ post.url }}">
-                <div class="aspect-h-4 aspect-w-3 rounded-lg">
-                  <img src="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAQDQCdASpkAEMAPrFGmko7qyWhsls9U3AWCWkGcA01nlwbK5buwWRoA3koD7+5vLBXAtOMrneG2GT90JyrLz+2XeotIAEq5PL4F0N1qTRIJ7LnMa5Zcre8UaDTMRtFt14eXNoGYkhNSt0REMN2PN4FwAD+7s4jHeyE9BXykzZMxIuwC4FSp408GYxRjoczsMvwZlqrnzr4cuA6X6MspvaoVHUro1XNU1SNxrLKLjhZrJ3GmlyoorlW1L532OP9tbhOeQgFiDwE81g+CH4d16xfOjEGrpus0wYxdunoI7Nokc5fnyoAw8pKJEq6cW3Yp4rqZw9fosV61qnAN+ViAH+WOzoqC6R90AA=" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="">
-                  <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
-                  <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
-                  <noscript>
-                    <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
-                  </noscript>
-                </div>
-                <div class="mt-8 text-blueGray-500 text-xl font-medium">{{ post.date }}<br/>34 min read</div>
-                <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ post.title }}</div>
-              </a>
-              <button class="p-3 text-black whitespace-nowrap text-lg font-medium bg-white rounded-lg focus:outline-none shadow hover:shadow-md group-hover:opacity-100 peer-hover:opacity-100 hover:opacity-100 peer-focus:opacity-100 focus:opacity-100 transition focus:ring-4 hover:ring-4 ring-team-current lg:opacity-0 lg:px-8 lg:py-4 absolute z-10 left-6 top-6">
-                <spanclass="hidden lg:inline">Click to copy url</span>
-                  <span class="inline lg:hidden">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path>
-                    <rect width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
-
-          <!-- post -->
-          <div class="col-span-4">
-            <div class="relative w-full">
-              <a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ post.url }}">
-                <div class="aspect-h-4 aspect-w-3 rounded-lg">
-                  <img src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="">
-                  <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
-                  <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcset="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
-                  <noscript>
-                    <img title="" alt="" src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop" srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w" sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
-                  </noscript>
-                </div>
-                <div class="mt-8 text-blueGray-500 text-xl font-medium">{{ post.date }}<br/>34 min read</div>
-                <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ post.title }}</div>
-              </a>
-              <button class="p-3 text-black whitespace-nowrap text-lg font-medium bg-white rounded-lg focus:outline-none shadow hover:shadow-md group-hover:opacity-100 peer-hover:opacity-100 hover:opacity-100 peer-focus:opacity-100 focus:opacity-100 transition focus:ring-4 hover:ring-4 ring-team-current lg:opacity-0 lg:px-8 lg:py-4 absolute z-10 left-6 top-6">
-                <spanclass="hidden lg:inline">Click to copy url</span>
-                  <span class="inline lg:hidden">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path>
-                    <rect width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
-
+          {% endfor %}
         </div>
       </div>
