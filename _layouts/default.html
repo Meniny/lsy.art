@@ -18,6 +18,12 @@ layout: base
       <div class=" h-10 lg:h-12"></div>
       {% endif %}
 
+      {% if page.has_margin == true %}
       <div class="relative mx-10vw">
+      {% endif %}
+
       {{ content }}
+
+      {% if page.has_margin == true %}
       </div>
+      {% endif %}

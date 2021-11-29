@@ -3,6 +3,7 @@ title: About
 layout: default
 has_header: false
 show_title: true
+has_margin: true
 ---
 Illustration artist. Trilingual. Conlanger.
 
