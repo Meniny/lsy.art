@@ -3,6 +3,7 @@ layout: default
 title: Home
 has_header: true
 show_title: false
+post_limit: 3
 ---
       <!-- Introduction -->
       <div class="relative mx-10vw">
@@ -84,7 +85,7 @@ show_title: false
       <!-- blogs -->
       <div class="relative mx-10vw">
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
-          {% for post in site.posts limit: 3 %}
+          {% for post in site.posts limit: page.post_limit %}
           <!-- post -->
           <div class="col-span-4">
             <div class="relative w-full">

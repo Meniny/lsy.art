@@ -1,0 +1,67 @@
+I"R<h2 id="branches---分支">Branches - 分支</h2>
+
+<p><img src="https://meniny.github.io/lsy.art/assets/images/posts/git-workflow.png" alt="git-workflow" /></p>
+
+<blockquote>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">master</code> - 默认主分支，一般功能开发不与此分支交互
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">hotfix-*</code> - 问题修复分支，完成后立即合并入 <code class="language-plaintext highlighter-rouge">master</code> 与 <code class="language-plaintext highlighter-rouge">develop</code> 分支</li>
+        <li><code class="language-plaintext highlighter-rouge">develop</code> - 主开发分支，也即功能最新最全的分支
+          <ul>
+            <li><code class="language-plaintext highlighter-rouge">feature-*</code> - 功能开发分支，完成后合并入 <code class="language-plaintext highlighter-rouge">develop</code> 分支</li>
+            <li><code class="language-plaintext highlighter-rouge">release-*</code> - 版本发布分支，完成后合并入 <code class="language-plaintext highlighter-rouge">master</code> 与 <code class="language-plaintext highlighter-rouge">develop</code> 分支并添加 <code class="language-plaintext highlighter-rouge">tag</code> 标记</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>其中 <code class="language-plaintext highlighter-rouge">develop</code> 及 <code class="language-plaintext highlighter-rouge">hotfix-*</code> 为 <code class="language-plaintext highlighter-rouge">master</code> 的子分支，<code class="language-plaintext highlighter-rouge">feature-*</code> 及 <code class="language-plaintext highlighter-rouge">release-*</code> 为 <code class="language-plaintext highlighter-rouge">develop</code> 的子分支。</p>
+</blockquote>
+
+<ul>
+  <li>首先由 <code class="language-plaintext highlighter-rouge">master</code> 分支 <code class="language-plaintext highlighter-rouge">fork</code> 产生 <code class="language-plaintext highlighter-rouge">develop</code> 分支；</li>
+  <li>进行功能开发时，由 <code class="language-plaintext highlighter-rouge">develop</code> 分支 <code class="language-plaintext highlighter-rouge">fork</code> 产生 <code class="language-plaintext highlighter-rouge">feature-*</code> 分支，完成后合并入 <code class="language-plaintext highlighter-rouge">develop</code> 分支；</li>
+  <li>进行版本发布时，由 <code class="language-plaintext highlighter-rouge">develop</code> 分支 <code class="language-plaintext highlighter-rouge">fork</code> 产生 <code class="language-plaintext highlighter-rouge">release-*</code> 分支，完成后合并入 <code class="language-plaintext highlighter-rouge">master</code> 与 <code class="language-plaintext highlighter-rouge">develop</code> 分支，并添加 <code class="language-plaintext highlighter-rouge">tag</code> 标记；</li>
+  <li>进行线上版本问题修复时，由 <code class="language-plaintext highlighter-rouge">master</code> 分支 <code class="language-plaintext highlighter-rouge">fork</code> 产生 <code class="language-plaintext highlighter-rouge">hotfix-*</code> 分支，完成后合并入 <code class="language-plaintext highlighter-rouge">master</code> 与 <code class="language-plaintext highlighter-rouge">develop</code> 分支。</li>
+</ul>
+
+<h2 id="pick--squash---遴选与压平">Pick &amp; Squash - 遴选与压平</h2>
+
+<p>在合并到主要分支前，合并并编辑相关信息以明确意图。注意，不要在变基的过程中不小心删掉提交。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 以下内容仅供参考：</span>
+<span class="nv">$ </span>git rebase <span class="nt">-i</span> HEAD~20  <span class="c"># 查看可进行压扁的二十个提交</span>
+<span class="nv">$ </span>git push <span class="nt">-f</span>
+<span class="nv">$ </span>git commit <span class="nt">--amend</span>
+</code></pre></div></div>
+
+<h2 id="divergent-branches---偏离分支">Divergent Branches - 偏离分支</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase <span class="nb">false</span>  <span class="c"># merge (the default strategy)</span>
+hint:   git config pull.rebase <span class="nb">true</span>   <span class="c"># rebase</span>
+hint:   git config pull.ff only       <span class="c"># fast-forward only</span>
+hint:
+hint: You can replace <span class="s2">"git config"</span> with <span class="s2">"git config --global"</span> to <span class="nb">set </span>a default
+hint: preference <span class="k">for </span>all repositories. You can also pass <span class="nt">--rebase</span>, <span class="nt">--no-rebase</span>,
+hint: or <span class="nt">--ff-only</span> on the <span class="nb">command </span>line to override the configured default per
+hint: invocation.
+</code></pre></div></div>
+
+<p>进行不带参数的 <code class="language-plaintext highlighter-rouge">git pull</code> 拉取时，如果出现以上警告，最简单的解决方式是保持默认策略:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config pull.ff <span class="nb">false</span>
+</code></pre></div></div>
+
+<p>此后再次执行不带参数的 <code class="language-plaintext highlighter-rouge">git pull</code> 时就不会再有警告了。</p>
+
+<p>当然，也可以将此策略配置为全局缺省配置:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> pull.ff <span class="nb">false</span>
+</code></pre></div></div>
+:ET

@@ -38,7 +38,6 @@ defaults:
       type: posts
     values:
       layout: "post"
-      active_title: "Posts"
   - scope:
       path: ""
       type: gallery
