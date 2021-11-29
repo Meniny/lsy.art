@@ -3,8 +3,7 @@ title: "Git Stuffs"
 category: "Technology"
 tags: ["Git"]
 date: 20210608T170000+08:00
-cover: '/assets/images/posts/git-workflow.png'
----
+cover: '/assets/images/site/home/ezra.png
 ## Branches - 分支
 
 ![git-workflow]({{ site.url }}/assets/images/posts/git-workflow.png)
