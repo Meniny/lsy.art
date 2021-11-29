@@ -40,8 +40,14 @@ defaults:
     values:
       layout: "post"
       cover: '/assets/images/site/home/ezra.png'
+      has_margin: true
+      show_title: true
+      has_header: false
   - scope:
       path: ""
       type: gallery
     values:
       layout: "album"
+      has_margin: true
+      show_title: true
+      has_header: false
