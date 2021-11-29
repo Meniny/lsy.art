@@ -1,2 +1,0 @@
-# lsy.art
-Personal website
