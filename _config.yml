@@ -1,0 +1,46 @@
+name: "lsy.art"
+name_en: "lsy.art"
+author: "Ezra"
+author_en: "Ezra"
+description: "Illustration artist."
+url: "https://meniny.github.io/lsy.art/"
+email: "admin@picsew.cn"
+github_url: "https://github.com/Meniny/lsy.art/"
+excerpt_limit: 100
+timezone: Asia/Shanghai
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+permalink: /posts/contents/:title/
+excerpt_limit: 200
+
+sass:
+  sass_dir: "/assets/sass/"
+  style: compressed
+
+# Plugins
+plugins: [jekyll-paginate,liquid] #jekyll-toc,jekyll-asciidoc]
+paginate: 6
+paginate_path: "/posts/page/:num"
+
+collections:
+  posts:
+    output: true
+  gallery:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: "post"
+      active_title: "Posts"
+  - scope:
+      path: ""
+      type: gallery
+    values:
+      layout: "album"
