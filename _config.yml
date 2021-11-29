@@ -39,6 +39,7 @@ defaults:
       type: posts
     values:
       layout: "post"
+      cover: '/assets/images/site/home/ezra.png'
   - scope:
       path: ""
       type: gallery
