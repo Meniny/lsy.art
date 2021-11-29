@@ -3,7 +3,7 @@ layout: default
 title: Posts
 has_header: false
 show_title: true
----      
+---
       <!-- blogs -->
       <div class="relative mx-10vw">
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
@@ -14,11 +14,13 @@ show_title: true
               <a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ post.url }}">
                 <div class="aspect-h-4 aspect-w-3 rounded-lg">
                   <img src="{{ site.url }}{{ post.cover }}" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="{{ post.title }}">
+                  {% if page.post_blur == true %}
                   <div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
-                  <img title="{{ post.title }}" alt="{{ post.title }}" src="{{ site.url }}{{ post.cover }}" srcset="" sizes="(max-width:639px) 100%, (min-width:640px) and (max-width:1023px) 100%, (min-width:1024px) and (max-width:1620px) 100%, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
+                  {% endif %}
+                  <!-- <img title="{{ post.title }}" alt="{{ post.title }}" src="{{ site.url }}{{ post.cover }}" srcset="" sizes="(max-width:639px) 100%, (min-width:640px) and (max-width:1023px) 100%, (min-width:1024px) and (max-width:1620px) 100%, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity opacity-0">
                   <noscript>
                     <img title="{{ post.title }}" alt="{{ post.title }}" src="{{ site.url }}{{ post.cover }}" srcSet="" sizes="(max-width:639px) 100%, (min-width:640px) and (max-width:1023px) 100%, (min-width:1024px) and (max-width:1620px) 100%, 420px" class="focus-ring w-full rounded-lg object-cover object-center transition" />
-                  </noscript>
+                  </noscript> -->
                 </div>
                 <div class="mt-8 text-blueGray-500 text-xl font-medium">{% include post_date.html date=post.date %}</div>
                 <div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ post.title }}</div>
