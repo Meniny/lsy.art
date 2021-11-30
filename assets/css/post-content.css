@@ -5,6 +5,7 @@
 }
 
 .post-content pre {
+	background-color: #4b4c53;
   word-break: break-all;
   white-space: pre-wrap;
 	color: #333;
@@ -54,7 +55,7 @@
 
 .post-content img,
 .post-content video {
-	background-color: #f0f0f0;
+	background-color: #4b4c53;
 	border-radius: 10px;
 	margin: 10px auto;
 	padding: 10px 10px;
