@@ -9,6 +9,7 @@ details.detailed-content {
 .dark details.toc {
   background-color: var(--atomone-gray);
   border-width: 0;
+  color: #f0f0f0;
 }
 
 .light details.detailed-content,
@@ -16,4 +17,5 @@ details.detailed-content {
   background-color: #fafafa;
   border-color: #666;
   border-width: 1px;
+  color: #333;
 }
