@@ -9,7 +9,7 @@
   white-space: pre-wrap;
 	color: #eee;
 	margin: 10px 0;
-	padding: 6px 0;
+	padding: 6px 6px;
 }
 
 .post-content h1 {
@@ -48,5 +48,5 @@
 	background-color: #f0f0f0;
 	border-radius: 10px;
 	margin: 10px 0;
-	padding: 6px 0;
+	padding: 6px 6px;
 }
