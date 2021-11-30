@@ -4,8 +4,11 @@
 	line-height: 34px;
 }
 
+.post-content div.highlight {
+		background-color: #4b4c53;
+}
+
 .post-content pre {
-	background-color: #4b4c53;
   word-break: break-all;
   white-space: pre-wrap;
 	color: #333;
