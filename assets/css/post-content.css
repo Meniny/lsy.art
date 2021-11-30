@@ -11,14 +11,17 @@
 
 .post-content h1 {
 	font-size: 32px;
+	margin: 20px 0;
 }
 
 .post-content h2 {
 	font-size: 28px;
+	margin: 16px 0;
 }
 
 .post-content h3 {
 	font-size: 22px;
+	margin: 12px 0;
 }
 
 .post-content h4,
@@ -34,6 +37,7 @@
 .post-content h5,
 .post-content h6 {
 	font-weight: bold;
+	margin: 8px 0;
 }
 
 .post-content img,
