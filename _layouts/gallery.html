@@ -1,28 +1,28 @@
 ---
-title: Gallery
 layout: default
 has_header: false
 show_title: true
 fullscreen: false
+post_blur: false
 ---
 <!-- gallery -->
 	<div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
-		{% for album in site.gallery %}
+		{% for image in page.media %}
 		<!-- post -->
 		<div class="col-span-4">
 			<div class="relative w-full">
-				<a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}{{ album.url }}">
+				<a class="group peer relative block w-full focus:outline-none" href="{{ site.url }}/assets/gallery/original/{{ image }}">
 					<div class="aspect-h-4 aspect-w-3 rounded-lg">
-						<img src="{{ site.url | append: '/assets/gallery/cover/' | append: album.cover }}" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="{{ post.title }}">
+						<img src="{{ site.url | append: '/assets/gallery/cover/' | append: image }}" class="focus-ring w-full rounded-lg object-cover object-center transition" alt="{{ post.title }}">
 						{% if page.post_blur == true %}
 						<div class="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
 						{% endif %}
 					</div>
-					<div class="mt-8 text-blueGray-500 text-xl font-medium">{{ album.media.size }} photo(s)</div>
-					<div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ album.title }}</div>
+					<!-- <div class="mt-8 text-blueGray-500 text-xl font-medium">{{ image }}</div> -->
+					<div class="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">{{ image }}</div>
 				</a>
 				<button class="p-3 text-black whitespace-nowrap text-lg font-medium bg-white rounded-lg focus:outline-none shadow hover:shadow-md group-hover:opacity-100 peer-hover:opacity-100 hover:opacity-100 peer-focus:opacity-100 focus:opacity-100 transition focus:ring-4 hover:ring-4 ring-team-current lg:opacity-0 lg:px-8 lg:py-4 absolute z-10 left-6 top-6">
-					<span class="hidden lg:inline">View more</span>
+					<span class="hidden lg:inline">Show Detail</span>
 						<span class="inline lg:hidden">
 							<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
 							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path>
@@ -34,3 +34,5 @@ fullscreen: false
 		</div>
 		{% endfor %}
 	</div>
+
+{% include gallery_lightbox.html %}
