@@ -7,7 +7,6 @@ manual_margin: true
 post_limit: 3
 ---
       <!-- Introduction -->
-      <!-- <div class="relative mx-10vw"> -->
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl">
           <div class="col-span-full lg:col-span-4">
             <button class="group relative">
@@ -47,13 +46,11 @@ post_limit: 3
             </a>
           </div>
         </div>
-      <!-- </div> -->
 
       <!-- space -->
       <div class=" h-56 lg:h-64"></div>
 
       <!-- Blog recommendations -->
-      <!-- <div class="relative mx-10vw"> -->
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl">
           <div class="flex flex-col col-span-full space-y-10 lg:flex-row lg:items-end lg:justify-between lg:space-y-0">
             <div class="space-y-2 lg:space-y-0">
@@ -78,13 +75,11 @@ post_limit: 3
             </a>
           </div>
         </div>
-      <!-- </div> -->
 
       <!-- space -->
       <div class=" h-10 lg:h-12"></div>
 
       <!-- blogs -->
-      <!-- <div class="relative mx-10vw"> -->
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
           {% for post in site.posts limit: page.post_limit %}
           <!-- post -->
@@ -117,4 +112,3 @@ post_limit: 3
           </div>
           {% endfor %}
         </div>
-      <!-- </div> -->

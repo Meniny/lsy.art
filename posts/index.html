@@ -3,10 +3,9 @@ layout: default
 title: Posts
 has_header: false
 show_title: true
-manual_margin: false
+manual_margin: true
 ---
       <!-- blogs -->
-      <div class="relative mx-10vw">
         <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
           {% for post in site.posts %}
           <!-- post -->
@@ -39,4 +38,3 @@ manual_margin: false
           </div>
           {% endfor %}
         </div>
-      </div>
