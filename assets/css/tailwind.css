@@ -3369,8 +3369,8 @@ video {
 }
 @font-face {
   font-family: 'Matter';
-  src: url('../../fonts/Matter-Regular.woff2') format('woff2'),
-    url('../../fonts/Matter-Regular.woff') format('woff');
+  src: url('{{ site.url }}/assets/fonts/Matter-Regular.woff2') format('woff2'),
+    url('{{ site.url }}/assets/fonts/Matter-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -51,3 +51,4 @@ defaults:
       fullscreen: false
       show_title: true
       has_header: false
+      has_gallery: true
