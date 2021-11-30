@@ -4,7 +4,11 @@
 <!-- footer -->
 <footer class="pb-16 pt-48">
   <!-- border-t border-gray-200 dark:border-gray-600 -->
+  {% if page.fullscreen == false %}
   <div class="relative mx-10vw">
+  {% else %}
+  <div class="relative">
+  {% endif %}
     <div class="relative grid gap-x-4 grid-cols-4 grid-rows-max-content mx-auto max-w-7xl md:grid-cols-8 xl:gap-x-6 xl:grid-cols-12">
       <!-- Left -->
       <div class="col-span-full md:col-span-3 xl:row-span-2">
