@@ -74,7 +74,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   <!-- Page content -->
   <div class="relative mx-10vw">
 
+    {% if page.has_header == true %}
     {% include layout_header.html %}
+    {% endif %}
 
     <main>
 
