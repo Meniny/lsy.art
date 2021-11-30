@@ -6,6 +6,7 @@
 
 .post-content div.highlight {
 		background-color: #4b4c53;
+		padding: 0 !important;
 }
 
 .post-content pre {
