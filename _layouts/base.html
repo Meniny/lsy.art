@@ -74,6 +74,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   <!-- Page content -->
   {% if page.fullscreen == false %}
   <div class="relative mx-10vw">
+  {% else %}
+  <div class="relative">
   {% endif %}
 
     {% if page.has_header == true %}
@@ -84,9 +86,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
       {{ content }}
     </main>
 
-  {% if page.fullscreen == false %}
   </div>
-  {% endif %}
 
   {% include layout_footer.html %}
 
