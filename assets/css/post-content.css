@@ -18,7 +18,9 @@
 }
 
 .post-content code {
-	padding: 6px 0;
+	padding: 6px 0 !important;
+	background-color: #4b4c53 !important;
+	color: #f0f0f0 !important;
 }
 
 .post-content ul,
