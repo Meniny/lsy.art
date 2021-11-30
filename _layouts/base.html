@@ -71,6 +71,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   <link href="{{ site.url }}/assets/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet">
   {% endif %}
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <meta name="color-scheme" content="dark light">
   <!-- <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Intl%2CIntl.ListFormat"></script> -->
 </head>
@@ -109,6 +111,15 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   	bindGalleryEventById('gallery-album-list');
   </script>
   {% endif %}
+
+  <script src="{{ site.url }}/assets/js/themeToggler.js"></script>
+  <script src="{{ site.url }}/assets/js/back2top.js"></script>
+  <script src="{{ site.url }}/assets/js/getQuery.js"></script>
+
+  <script type="text/javascript">
+    loadTheme();
+  </script>
+
 </body>
 
 </html>
