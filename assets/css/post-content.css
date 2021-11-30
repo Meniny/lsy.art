@@ -1,9 +1,37 @@
 .post-content {
 	font-size: 16px;
 	color: #f0f0f0;
+	line-height: 32px;
 }
 
-pre {
+.post-content pre {
   word-break: break-all;
   white-space: pre-wrap;
+}
+
+.post-content h1 {
+	font-size: 32px;
+}
+
+.post-content h2 {
+	font-size: 28px;
+}
+
+.post-content h3 {
+	font-size: 22px;
+}
+
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	font-size: 18px;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	font-weight: bold;
 }
