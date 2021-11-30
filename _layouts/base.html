@@ -72,18 +72,21 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   {% include layout_navigation.html %}
 
   <!-- Page content -->
+  {% if page.fullscreen == false %}
   <div class="relative mx-10vw">
+  {% endif %}
 
     {% if page.has_header == true %}
     {% include layout_header.html %}
     {% endif %}
 
     <main>
-
       {{ content }}
-
     </main>
+
+  {% if page.fullscreen == false %}
   </div>
+  {% endif %}
 
   {% include layout_footer.html %}
 
