@@ -7,7 +7,7 @@ details.detailed-content {
 
 .dark details.detailed-content,
 .dark details.toc {
-  background-color: var(--atomone-gray);
+  background-color: #4b4c53;
   border-width: 0;
   color: #f0f0f0;
 }
