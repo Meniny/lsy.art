@@ -13,6 +13,10 @@
 	line-height: 20px;
 }
 
+.post-content code {
+	padding: 6px 0;
+}
+
 .post-content ul,
 .post-content ol {
 	list-style: initial;
