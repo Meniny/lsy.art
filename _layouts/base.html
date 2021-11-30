@@ -63,6 +63,14 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   <link rel="stylesheet" href="{{ site.url }}/assets/css/prose.css">
   <link rel="stylesheet" href="{{ site.url }}/assets/css/app.css">
   <noscript><link rel="stylesheet" href="{{ site.url }}/assets/css/no-script.css" /></noscript>
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/post-content.css">
+
+  {% if page.has_gallery == true %}
+  <!-- gallery_lightbox -->
+  <link href="{{ site.url }}/assets/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet">
+  {% endif %}
+
   <meta name="color-scheme" content="dark light">
   <!-- <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Intl%2CIntl.ListFormat"></script> -->
 </head>
@@ -90,6 +98,17 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
   {% include layout_footer.html %}
 
+  {% if page.has_gallery == true %}
+  <!-- gallery_lightbox -->
+  {% include gallery_lightbox.html %}
+
+  <script src="{{ site.url }}/assets/blueimp-gallery/js/vendor/jquery.js"></script>
+  <script src="{{ site.url }}/assets/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+  <script src="{{ site.url }}/assets/blueimp-gallery/js/blueimp-binding.js"></script>
+  <script type="text/javascript">
+  	bindGalleryEventById('gallery-album-list');
+  </script>
+  {% endif %}
 </body>
 
 </html>

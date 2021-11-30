@@ -6,7 +6,7 @@ fullscreen: false
 post_blur: false
 ---
 <!-- gallery -->
-	<div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
+	<div id="gallery-album-list" class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl gap-y-16">
 		{% for image in page.media %}
 		<!-- post -->
 		<div class="col-span-4">
@@ -25,5 +25,3 @@ post_blur: false
 		</div>
 		{% endfor %}
 	</div>
-
-{% include gallery_lightbox.html %}

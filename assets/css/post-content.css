@@ -1,0 +1,9 @@
+.post-content {
+	font-size: 16px;
+	color: #f0f0f0;
+}
+
+pre {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
