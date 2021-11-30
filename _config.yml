@@ -40,7 +40,7 @@ defaults:
     values:
       layout: "post"
       cover: '/assets/images/site/home/ezra.png'
-      manual_margin: true
+      fullscreen: false
       show_title: true
       has_header: false
   - scope:
@@ -48,6 +48,6 @@ defaults:
       type: gallery
     values:
       layout: "album"
-      manual_margin: true
+      fullscreen: false
       show_title: true
       has_header: false
