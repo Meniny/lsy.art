@@ -1,0 +1,47 @@
+{% if page.has_header == true %}
+<!-- Header -->
+<header class="relative mx-10vw">
+  <div class="relative grid gap-x-4 grid-cols-4 md:grid-cols-8 lg:gap-x-6 lg:grid-cols-12 mx-auto max-w-7xl lg:min-h-[40rem] lg: mb-24 pt-24 h-auto lg:pb-12 lg:mb-64">
+    <div class="col-span-full mb-12 lg:mb-0 lg:col-start-6 lg:col-span-7 lg:px-0 lg:-mt-24 lg:-mr-5vw flex items-center justify-center">
+      <img class="w-full h-auto object-contain max-h-75vh" alt="" src="{{ site.url }}/assets/images/site/home/intro.png" sizes="(max-width: 1023px) 80vw, (min-width: 1024px) and (max-width: 1279px) 50vw, (min-width: 1280px) 900px">
+    </div>
+    <div class="col-span-full pt-6 lg:flex lg:flex-col lg:col-start-1 lg:row-start-1 lg:h-full lg:col-span-5">
+      <div class="flex flex-auto flex-col">
+        <div>
+          <h2 class="leading-tight text-3xl md:text-4xl text-black dark:text-white">{% if page.description.size > 0 %}{{ page.description }}{% else %}Making the world a better place through quality software.{% endif %}</h2>
+        </div>
+        <div class="flex flex-col mt-14 space-y-4">
+          <div class="flex flex-col gap-4 mr-auto">
+            <a class="group relative inline-flex text-lg font-medium focus:outline-none opacity-100 disabled:opacity-50 transition" href="{{ site.url }}/posts">
+              <div class="focus-ring absolute inset-0 rounded-full opacity-100 disabled:opacity-50 transform transition bg-inverse"></div>
+              <div class="relative flex items-center justify-center w-full h-full whitespace-nowrap text-inverse px-11 py-6 space-x-5">Read the blog</div>
+            </a>
+            <a class="group relative inline-flex text-lg font-medium focus:outline-none opacity-100 disabled:opacity-50 transition" href="{{ site.url }}/about">
+              <div class="focus-ring absolute inset-0 rounded-full opacity-100 disabled:opacity-50 transform transition border-2 border-secondary bg-primary group-hover:border-transparent group-focus:border-transparent"></div>
+              <div class="relative flex items-center justify-center w-full h-full whitespace-nowrap text-primary px-11 py-6 space-x-5">More about me</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden pt-12 lg:block">
+        <a class="text-primary inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition text-lg" href="#intro">
+          <!-- down arrow -->
+          <div class="relative inline-flex flex-none items-center justify-center p-1 w-14 h-14">
+            <div class="absolute text-gray-200 dark:text-gray-600">
+              <svg width="60" height="60">
+                <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30" cy="30"></circle>
+                <circle class="text-primary" stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30" cy="30" style="stroke-dasharray:175.92918860102841 175.92918860102841"></circle>
+              </svg>
+            </div>
+            <span>
+              <svg class="transform rotate-0" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z" fill="currentColor"></path>
+              </svg>
+            </span>
+          </div>
+          <span class="ml-8 text-xl font-medium">Learn more about me</span>
+        </a></div>
+    </div>
+  </div>
+</header>
+{% endif %}
