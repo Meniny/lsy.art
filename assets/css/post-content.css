@@ -35,3 +35,9 @@
 .post-content h6 {
 	font-weight: bold;
 }
+
+.post-content img,
+.post-content video {
+	background-color: #f0f0f0;
+	border-radius: 10px;
+}
