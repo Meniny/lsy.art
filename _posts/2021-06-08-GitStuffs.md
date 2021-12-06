@@ -3,11 +3,13 @@ title: "Git Stuffs"
 category: "Technology"
 tags: ["Git"]
 date: 20210608T170000+08:00
-cover: '/assets/images/site/home/ezra.png'
+hero:
+  format: 'jpeg'
+  url: 'HERO_0029.jpg'
 ---
 ## Branches - 分支
 
-![git-workflow]({{ site.url }}/assets/images/posts/git-workflow.png)
+![git-workflow]({{ site.url }}/assets/images/git-workflow.png)
 
 > - `master` - 默认主分支，一般功能开发不与此分支交互
 >   - `hotfix-*` - 问题修复分支，完成后立即合并入 `master` 与 `develop` 分支
@@ -63,3 +65,5 @@ git config pull.ff false
 ```sh
 git config --global pull.ff false
 ```
+
+<center><br /><img src="{{ site.url }}/assets/images/card-pub.jpg" alt="PROFILE" align=center style="width: 100%; max-width: 350px;"/></center>

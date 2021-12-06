@@ -55,6 +55,14 @@
             </svg>
           </button>
         </div>
+        <script type="text/javascript">
+          $('.menu a').click(function(){
+
+            $('.trigger').toggle();
+            $('.close').toggle();
+            $('.drop-down').toggleClass('down');
+          });
+        </script>
         {% if site.theme_toggler == true %}
         <!-- light/dark -->
         <div class="hidden noscript-hidden lg:block">
