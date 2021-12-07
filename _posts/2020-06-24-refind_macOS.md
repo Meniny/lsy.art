@@ -23,7 +23,7 @@ The `diskutil` command, shrinks the APFS container (121100M, i.e. 121.1 GB) by 3
 
 After the command completes, restart the Mac.
 
-{% include alert.html type='info' title='NOTE' msg='If you get an error message which includes the phrase "perhaps caused by APFS Snapshot usage by Time Machine", then see Neil\'s own answer to the question: <a href="https://apple.stackexchange.com/questions/321533/cant-resize-apfs-container-not-enough-free-space-in-container-due-to-apfs-limi">Can\'t resize APFS Container: Not enough free space in Container due to APFS limits or tidemarks</a> .' %}
+> If you get an error message which includes the phrase "perhaps caused by APFS Snapshot usage by Time Machine", then see Neil\'s own answer to the question: [https://apple.stackexchange.com/questions/321533/cant-resize-apfs-container-not-enough-free-space-in-container-due-to-apfs-limi](Can\'t resize APFS Container: Not enough free space in Container due to APFS limits or tidemarks).
 
 ## Download
 
@@ -34,7 +34,7 @@ cd ~/Downloads/refind-bin-0.12.0
 ./refind-install --ownhfs /dev/disk0s3
 ```
 
-{% include alert.html type='info' title='NOTE' msg='The error message <code>Could not set boot device property: 0xe00002bc</code> was expected and can be ignored.  ' %}
+> The error message `Could not set boot device property: 0xe00002bc` was expected and can be ignored.  
 
 ## **(Optional)** Permissions
 

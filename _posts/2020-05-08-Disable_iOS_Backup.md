@@ -9,7 +9,7 @@ hero:
 ---
 When you sync your iPhone or iPad with iTunes, it triggers an automatic backup. Whilst it's a sensible precaution to backup regularly, it is possible to skip iTunes backups. I don't recommend performing an iTunes sync without a backup, but here's how you can disable those backups, and re-enable them if you change your mind.
 
-{% include alert.html type='info' no_window='true' title="Video" msg="iTunes Backup disabled." video='/assets/videos/posts/iOS_Sync.mp4' poster='/assets/videos/posts/iOS_Sync.jpg' aspect='18.18%' %}
+<video src='/assets/videos/posts/iOS_Sync.mp4' poster='/assets/videos/posts/iOS_Sync.jpg' controls='controls'></video>
 
 # macOS
 
