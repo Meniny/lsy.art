@@ -17,7 +17,7 @@ main() {
 
 Since then, Hello World has been implemented in just about every programming language on the planet. This collection includes 600 Hello World programs in as many more-or-less well known programming languages, plus [78 human languages](#Human).
 
-{% include image_frame.html image='/assets/images/posts/helloworld/qrcode.png' %}
+![](/assets/images/posts/helloworld/qrcode.png)
 
 # #
 
@@ -347,7 +347,7 @@ void main() { print("Hello world
 
 ## Anguish
 
-{% include alert.html type='success' title='Link' msg='Hello world in Anguish.' iframe='http://blogs.perl.org/users/zoffix_znet/2016/05/anguish-invisible-programming-language-and-invisible-data-theft.html' %}
+[http://blogs.perl.org/users/zoffix_znet/2016/05/anguish-invisible-programming-language-and-invisible-data-theft.html](http://blogs.perl.org/users/zoffix_znet/2016/05/anguish-invisible-programming-language-and-invisible-data-theft.html)
 
 ## Ante
 
