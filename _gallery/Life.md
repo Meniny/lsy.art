@@ -1,5 +1,5 @@
 ---
-title: Lau
+title: Life
 layout: album
 cover: cover_life.jpg
 #cover: lau-00006.jpeg
